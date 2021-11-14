@@ -47,10 +47,9 @@ function Home() {
       </div>
       <div className="Home">
         <div className="pettycash-container">
-          <Button variant="primary" onClick={() => setShow(true)}>
+          <Button variant="primary" size="lg" onClick={() => setShow(true)}>
             PettyCash
           </Button>
-
           <Modal
             show={show}
             onHide={() => setShow(false)}
@@ -75,7 +74,6 @@ function Home() {
               )}
             </Modal.Body>
           </Modal>
-
           {/* {editModeEnabled ? (
             <EditBills />
           ) : (
